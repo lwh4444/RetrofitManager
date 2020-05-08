@@ -1,9 +1,10 @@
 package com.lei.library.rx;
 
-import com.lei.retrofit_manager.Util;
-import com.lei.retrofit_manager.bean.BaseResp;
-import com.lei.retrofit_manager.exception.ApiException;
-import com.lei.retrofit_manager.exception.ResultInterceptedException;
+
+import com.lei.library.Util;
+import com.lei.library.bean.BaseResp;
+import com.lei.library.exception.ApiException;
+import com.lei.library.exception.ResultInterceptedException;
 
 import java.net.ConnectException;
 

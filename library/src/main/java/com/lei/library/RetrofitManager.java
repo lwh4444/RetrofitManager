@@ -2,8 +2,9 @@ package com.lei.library;
 
 import android.util.Log;
 
-import com.lei.retrofit_manager.bean.BaseResp;
-import com.lei.retrofit_manager.gson.LGsonConverterFactory;
+
+import com.lei.library.bean.BaseResp;
+import com.lei.library.gson.LGsonConverterFactory;
 
 import java.security.GeneralSecurityException;
 import java.security.SecureRandom;

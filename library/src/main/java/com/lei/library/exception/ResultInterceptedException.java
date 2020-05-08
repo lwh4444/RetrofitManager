@@ -1,6 +1,7 @@
 package com.lei.library.exception;
 
-import com.lei.retrofit_manager.bean.BaseResp;
+
+import com.lei.library.bean.BaseResp;
 
 public class ResultInterceptedException extends Exception {
     private final BaseResp result;

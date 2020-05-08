@@ -1,6 +1,7 @@
 package com.lei.library;
 
-import com.lei.retrofit_manager.bean.BaseResp;
+
+import com.lei.library.bean.BaseResp;
 
 public class Util {
     public Util() {
