@@ -6,7 +6,7 @@ import javax.net.ssl.X509TrustManager;
 
 import okhttp3.Interceptor;
 
-public class SimpleOkHttpConfiguration {
+public class SimpleOkHttpConfiguration  implements OkHttpConfiguration{
     public SimpleOkHttpConfiguration() {
     }
 
