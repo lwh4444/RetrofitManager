@@ -5,6 +5,8 @@ public class BaseResp {
     private String msg;
     private String msgCode;
     private String cacheTime;
+    private String message;
+    private int code;
 
     public BaseResp() {
     }
@@ -39,5 +41,21 @@ public class BaseResp {
 
     public void setCacheTime(String cacheTime) {
         this.cacheTime = cacheTime;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
     }
 }
