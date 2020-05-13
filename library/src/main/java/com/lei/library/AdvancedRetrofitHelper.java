@@ -205,7 +205,7 @@ public class AdvancedRetrofitHelper {
                 }).map(new Function<T, T>() {
                     public T apply(@NonNull T t) throws Exception {
                         String status = t.getCode();
-                        if (!"100".equals(status)) {
+                        if (!SUCCESS.equals(status)) {
                             throw new ApiException(t);
                         } else {
                             return t;
