@@ -26,7 +26,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class AdvancedRetrofitHelper {
-    public static final String SUCCESS = "100";
+    public static final String SUCCESS = "0";
     public static final String FAILURE = "-1";
     private static WeakHashMap<Object, List<Call>> callMap = new WeakHashMap();
     private static WeakHashMap<Object, CompositeDisposable> disposableMap = new WeakHashMap();
@@ -122,7 +122,7 @@ public class AdvancedRetrofitHelper {
                                 if (callback != null) {
                                     callback.onIntercepted(call, body);
                                 }
-                            } else if ("100".equals(statusx)) {
+                            } else if (SUCCESS.equals(statusx)) {
                                 if (callback != null) {
                                     callback.onSuccess(call, body);
                                 }
