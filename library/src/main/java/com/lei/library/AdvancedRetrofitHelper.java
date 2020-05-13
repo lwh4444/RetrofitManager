@@ -116,8 +116,8 @@ public class AdvancedRetrofitHelper {
                         T body = response.body();
                         String statusx;
                         if (body != null) {
-                            statusx = body.getStatus();
-                            String msg = body.getMsg();
+                            statusx = body.getCode();
+                            String msg = body.getMessage();
                             if (Util.isIntercepted(body)) {
                                 if (callback != null) {
                                     callback.onIntercepted(call, body);
@@ -204,7 +204,7 @@ public class AdvancedRetrofitHelper {
                     }
                 }).map(new Function<T, T>() {
                     public T apply(@NonNull T t) throws Exception {
-                        String status = t.getStatus();
+                        String status = t.getCode();
                         if (!"100".equals(status)) {
                             throw new ApiException(t);
                         } else {

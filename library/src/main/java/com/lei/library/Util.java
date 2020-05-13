@@ -9,7 +9,7 @@ public class Util {
 
     public static BaseResp createErrorResp(String status) {
         BaseResp baseResp = new BaseResp();
-        baseResp.setStatus(status);
+        baseResp.setCode(status);
         return baseResp;
     }
 
